@@ -56,7 +56,7 @@ const projects = (await getCollection('work'))
 		</div>
 
 		<main class="wrapper stack gap-20 lg:gap-48">
-			<section class="section with-background with-cta">
+			<!--<section class="section with-background with-cta">
 				<header class="section-header stack gap-2 lg:gap-4">
 					<h3>Selected Work</h3>
 					<p>Take a look below at some of my featured work for clients from the past few years.</p>
@@ -80,9 +80,9 @@ const projects = (await getCollection('work'))
 						<Icon icon="arrow-right" size="1.2em" />
 					</CallToAction>
 				</div>
-			</section>
+			</section>-->
 
-			<section class="section with-background bg-variant">
+			<section class="section with-cta">
 				<header class="section-header stack gap-2 lg:gap-4">
 					<h3>Kind words</h3>
 					<p>
@@ -91,8 +91,16 @@ const projects = (await getCollection('work'))
 					</p>
 				</header>
 
+				<div class="cta">
+					<CallToAction href="/work/">
+						View All
+						<Icon icon="arrow-right" size="1.2em" />
+					</CallToAction>
+				</div>
+
 				<div class="gallery">
-					<Grid variant="small">
+					<Testimonials />
+					<!--<Grid variant="small">
 						{
 							['Medium', 'BuzzFeed', 'The Next Web', 'awwwards.', 'TechCrunch'].map((brand) => (
 								<li class="mention-card">
@@ -100,7 +108,7 @@ const projects = (await getCollection('work'))
 								</li>
 							))
 						}
-					</Grid>
+					</Grid>-->
 				</div>
 			</section>
 		</main>

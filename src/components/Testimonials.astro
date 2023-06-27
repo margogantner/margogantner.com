@@ -1,0 +1,73 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section class="box testimonials">
+	<div class="stack gap-2 lg:gap-4">
+		<!--<Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />-->
+		<h2>Stefanie Grieser</h2>
+		<h4>SaaS Marketer & Advisor. Co-Founder Shine Bootcamp.</h4>
+		<p>Margo is a beautiful human being. Positive, proactive, and quick to learn, she brightens up every room she walks into. 
+			At work, she's a tenacious problem solver (give her a problem and she'll solve it!). 
+			She also asks really great questions which shows you she's a learner.</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<!--<Icon icon="trophy" color="var(--accent-regular)" size="2.5rem" gradient />-->
+		<h2>Mayank Pandey</h2>
+		<h4>Marketing Operations Manager at Opus 2</h4>
+		<p>Her ‘out of the box thinking’ and fearless approach to marketing was a joy to work with. Margo is always able to find a balance between constant innovation and improvement whilst still being able to maintain high standards of output. 
+			She is proactive in her approach and someone whom you can rely on to get the job done. Always willing to learn and grow.</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<!--<Icon icon="strategy" color="var(--accent-regular)" size="2.5rem" gradient />-->
+		<h2>Don Burks</h2>
+		<h4>Technical Lead at Amazon</h4>
+		<p>Margo possesses the superpower of being able to accomplish whatever task you give her. 
+			The depth, diversity, complexity, or ambiguity of the task stop being variables that prevent her from being able to achieve a positive outcome. 
+			I can confidently say that I am grateful for the time I have been able to work with her, as my respect and admiration for what she is capable of has only grown over time.</p>
+	</div>
+</section>
+
+<style>
+	.box {
+		border: 0px;
+		border-radius: 0.75rem;
+		padding: 0rem;
+		/*<background-color: var(--gray-999_40);>
+		box-shadow: var(--shadow-sm);*/
+	}
+
+	.testimonials {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.testimonials h2 {
+		font-size: var(--text-lg);
+	}
+
+	.testimonials h4 {
+		font-size: var(--text-sm);
+	}
+	.testimonials p {
+		color: var(--gray-400);
+	}
+
+	@media (min-width: 50em) {
+		.box {
+			border-radius: 1.5rem;
+			padding: 0rem;
+		}
+
+		.testimonials {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 5rem;
+		}
+
+		.testimonials h2 {
+			font-size: var(--text-2xl);
+		}
+	}
+</style>
