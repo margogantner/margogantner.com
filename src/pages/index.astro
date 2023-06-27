@@ -15,6 +15,7 @@ import PortfolioPreview from '../components/PortfolioPreview.astro';
 // Page section components
 import ContactCTA from '../components/ContactCTA.astro';
 import Skills from '../components/Skills.astro';
+import Testimonials from '../components/Testimonials.astro';
 
 // Content Fetching: List four most recent work projects
 const projects = (await getCollection('work'))
@@ -31,13 +32,13 @@ const projects = (await getCollection('work'))
 			<header class="hero">
 				<Hero
 					title="Hello, my name is Margo Gantner"
-					tagline="I am a digital product specialist."
+					tagline="I am a product-led growth enthusiast."
 					align="start"
 				>
 					<div class="roles">
-						<Pill><Icon icon="code" size="1.33em" /> Digital Marketeer</Pill>
-						<Pill><Icon icon="mountain" size="1.33em" /> Runner</Pill>
-						<Pill><Icon icon="pencil-line" size="1.33em" /> Writer</Pill>
+						<Pill><Icon icon="code" size="1.33em" /> Product-led Growth</Pill>
+						<Pill><Icon icon="mountain" size="1.33em" /> Mountain Exploration</Pill>
+						<Pill><Icon icon="pencil-line" size="1.33em" /> Writing</Pill>
 					</div>
 				</Hero>
 
@@ -50,6 +51,8 @@ const projects = (await getCollection('work'))
 			</header>
 
 			<Skills />
+
+
 		</div>
 
 		<main class="wrapper stack gap-20 lg:gap-48">
@@ -81,9 +84,9 @@ const projects = (await getCollection('work'))
 
 			<section class="section with-background bg-variant">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Mentions</h3>
+					<h3>Kind words</h3>
 					<p>
-						I have been fortunate enough to recieve praise for my work in several publications. Take
+						I have been fortunate enough to receive wonderful feedback for my work. Take
 						a look below to learn more.
 					</p>
 				</header>
